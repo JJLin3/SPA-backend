@@ -41,7 +41,7 @@ app.use(timeout(120000)); // set the timeout to 2 minutes
 app.use(haltOnTimedout);
 
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:3000' })); // specific on the origin that allow to access to this server 
+app.use(cors({ origin: 'https://spa-frontend-gules.vercel.app/' })); // specific on the origin that allow to access to this server 
 app.use(express.urlencoded({ extended: true }));
 
 //login related function
